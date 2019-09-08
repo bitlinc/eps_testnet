@@ -5,7 +5,7 @@
 
 # The most important options are towards the top of the file
 
-[master-public-keys]
+mympk
 # Add electrum wallet master public keys to this section
 # In electrum then go Wallet -> Information to get the mpk
 
@@ -21,14 +21,14 @@
 
 [bitcoin-rpc]
 host = 127.0.0.1
-port = 8332
+port = 18332
 #add the bitcoin datadir to search for the .cookie file created by the
 # node, which avoids the need to configure rpc_user/pass
 #leave this option empty to have it look in the default location
 datadir =
 #if you dont want to use the .cookie method with datadir, uncomment to config u/p here
-#rpc_user =
-#rpc_password =
+rpc_user = epsusernametestnet
+rpc_password = epspasswordtestnet
 
 #to be used with the multi-wallet feature
 # see https://github.com/bitcoin/bitcoin/blob/master/doc/release-notes/release-notes-0.15.0.md#multi-wallet-$
@@ -42,7 +42,7 @@ poll_interval_connected = 5
 
 # Parameters for dealing with deterministic wallets
 # how many addresses to import first time, should be big because if you import too little you may have to re$
-initial_import_count = 1000
+initial_import_count = 2000
 # number of unused addresses kept at the head of the wallet
 gap_limit = 25
 
@@ -50,7 +50,7 @@ gap_limit = 25
 # 0.0.0.0 to accept connections from any IP
 #127.0.0.1 to accept from only localhost
 host = 127.0.0.1
-port = 50002
+port = 50003
 
 # space-separated whitelist of IP addresses
 # accepts CIDR notation eg 192.168.0.0/16 or 2a01:4f8:1f1::/120
@@ -68,7 +68,7 @@ keyfile = certs/cert.key
 # Option for disabling the fee histogram calculation
 # It improves server responsiveness but stops mempool-based Electrum features
 # This is useful on low powered devices at times when the node mempool is large
-disable_mempool_fee_histogram = false
+disable_mempool_fee_histogram = true
 
 # Parameter for broadcasting unconfirmed transactions
 # Options are:
