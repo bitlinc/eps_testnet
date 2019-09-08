@@ -5,11 +5,11 @@
 
 # The most important options are towards the top of the file
 
-mympk
+
 # Add electrum wallet master public keys to this section
 # In electrum then go Wallet -> Information to get the mpk
 
-#any_name_works = xpub661MyMwAqRbcFseXCwRdRVkhVuzEiskg4QUp5XpUdNf2uGXvQmnD4zcofZ1MN6Fo8PjqQ5cemJQ39f7RTwDVVp$
+testnet_masterpublickey = replacempk
 
 # Multiple master public keys maybe added by simply adding another line
 #my_second_wallet = xpubanotherkey
@@ -27,8 +27,8 @@ port = 18332
 #leave this option empty to have it look in the default location
 datadir =
 #if you dont want to use the .cookie method with datadir, uncomment to config u/p here
-rpc_user = epsusernametestnet
-rpc_password = epspasswordtestnet
+rpc_user = var2
+rpc_password = bin1
 
 #to be used with the multi-wallet feature
 # see https://github.com/bitcoin/bitcoin/blob/master/doc/release-notes/release-notes-0.15.0.md#multi-wallet-$
