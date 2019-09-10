@@ -9,7 +9,7 @@
 # Add electrum wallet master public keys to this section
 # In electrum then go Wallet -> Information to get the mpk
 
-testnet_masterpublickey = replacempk
+testnet_masterpublickey = replacempktestnet
 
 # Multiple master public keys maybe added by simply adding another line
 #my_second_wallet = xpubanotherkey
