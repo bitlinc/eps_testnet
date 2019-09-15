@@ -5,7 +5,7 @@
 
 # The most important options are towards the top of the file
 
-
+[master-public-keys]
 # Add electrum wallet master public keys to this section
 # In electrum then go Wallet -> Information to get the mpk
 
